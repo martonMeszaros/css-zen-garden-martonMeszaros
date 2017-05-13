@@ -1,0 +1,143 @@
+$link-hover: #B2FF59
+
+*
+    margin: 0
+    padding: 0
+    border: none
+    box-sizing: border-box
+    outline: none
+    text-decoration: none
+    font-weight: 400
+
+\:root
+    font-size: 16px
+
+body
+    font-family: Helvetica, sans-serif
+
+video
+    position: fixed
+    z-index: -1
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+
+a
+    color: black
+    text-decoration: underline
+    transition: all 0.3s ease-in-out
+
+    &:hover,
+    &:active
+        color: #00C853
+
+.intro
+    margin-bottom: 50px
+
+    header
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        height: 100vh
+        margin-bottom: 50px
+        position: relative
+        background:
+            image: url("images/banner-bg.jpg")
+            attachment: fixed
+            position: center top
+            repeat: no-repeat
+        color: white
+        font-size: 1.75rem
+        font-weight: 700
+        text-align: center
+        text-shadow: 0 6px 16px black
+        overflow: hidden
+
+        h1
+            font-size: 5rem
+    
+    .summary,
+    .preamble
+        max-width: 960px
+        margin: 0 auto
+        padding: 10px
+        background: rgba(255, 255, 255, 0.85)
+        box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.35)
+    
+    h3
+        font-weight: 700
+
+.main
+    display: flex
+    flex:
+        wrap: wrap
+    max-width: 960px
+    margin: 0 auto 50px
+
+    > div
+        max-width: calc(50% - 2ch)
+        margin: 1ch
+        padding: 2em 1em
+        background: rgba(255, 255, 255, 0.85)
+        box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.35)
+
+    h3
+        font-weight: 700
+        margin-top: 1em
+    
+    p
+        max-width: 66ch
+    
+    footer
+        margin: 2em auto 0
+        text-shadow: 0 6px 6px rgba(0, 0, 0, 0.35)
+
+        a
+            color: white
+            text-decoration: underline
+            transition: all 0.3s ease-in-out
+
+            &:hover,
+            &:active
+                color: $link-hover
+
+
+
+// Footer-stuff
+.sidebar
+    background: transparentize(#33691E, 0.15)
+    color: white
+
+    .wrapper
+        display: flex
+        max-width: 960px
+        margin: 0 auto
+        padding: 50px
+
+        > *
+            flex-grow: 1
+    
+    ul
+        margin-top: 0.5em
+        list-style-type: none
+    
+    li
+        margin-bottom: 0.25em
+
+        &:last-child
+            margin-bottom: 0
+    
+    a
+        padding: 5px
+        color: white
+        text-decoration: underline
+        transition: all 0.3s ease-in-out
+    
+        &:hover,
+        &:active
+            color: $link-hover
