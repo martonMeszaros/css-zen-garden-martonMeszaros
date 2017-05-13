@@ -56,8 +56,8 @@
 
 	<section class="intro" id="zen-intro">
 		<header role="banner">
-			<h1>CSS Zen Garden</h1>
-			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+			<h1 class="parallax">CSS Zen Garden</h1>
+			<h2 class="parallax">The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
 		</header>
 
 		<div class="summary" id="zen-summary" role="article">
@@ -196,6 +196,16 @@
 -->
 <div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
 <div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+
+<script>
+	window.addEventListener("scroll", function(){
+		var wScroll = window.scrollY;
+		var parallaxers = document.getElementsByClassName("parallax");
+		for(i = 0; i < parallaxers.length; i++){
+			parallaxers[i].style.transform = "translateY("+ wScroll/2 +"px)";
+		}
+	});
+</script>
 
 </body>
 </html>
