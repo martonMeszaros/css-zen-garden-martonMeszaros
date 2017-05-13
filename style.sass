@@ -35,7 +35,7 @@ a
     &:active
         color: #00C853
 
-.intro
+#zen-intro
     margin-bottom: 50px
 
     header
@@ -61,8 +61,8 @@ a
         h1
             font-size: 5rem
     
-    .summary,
-    .preamble
+    #zen-summary,
+    #zen-preamble
         max-width: 960px
         margin: 0 auto
         padding: 10px
@@ -121,6 +121,7 @@ a
 
         > *
             flex-grow: 1
+            padding: 1ch
     
     ul
         margin-top: 0.5em
@@ -141,3 +142,9 @@ a
         &:hover,
         &:active
             color: $link-hover
+    
+    #design-selection
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0))
+    
+    #zen-resources
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0))
